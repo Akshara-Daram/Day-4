@@ -3,7 +3,7 @@ import re
 
 def get_news_headlines():
   """Scrape the news headlines from the BBC website."""
-  url = "https://www.bbc.com/news"
+  url = "https://howtostartanllc.com/business-ideas/fruit-market"
   response = requests.get(url)
   html = response.content.decode("utf-8")
 
@@ -15,7 +15,7 @@ def get_news_headlines():
 
 def main():
   headlines = get_news_headlines()
-  print("Latest News Headlines:")
+  print("Fruit Market website headlines:")
   for headline in headlines:
     print(f"{headline}")
 
